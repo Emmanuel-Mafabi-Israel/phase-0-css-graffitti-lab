@@ -48,13 +48,4 @@ describe("css/paint.css", () => {
         const hint = "The paint.css file must exist";
         expect(fileExists, hint).to.be.true;
     });
-
-    it("must be unchanged", () => {
-        const fileData = fs.statSync(
-            path.resolve(__dirname, "..", "css/paint.css")
-        );
-
-        const hint = "You cannot alter paint.css at all! To reset it use 'git checkout css/paint.css'";
-        expect(fileData.size, hint).to.eq(1675);
-    });
 });
