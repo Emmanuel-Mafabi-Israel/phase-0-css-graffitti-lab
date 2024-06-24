@@ -1,0 +1,84 @@
+/*
+    GLORY BE TO GOD,
+    Graffitti CSS Project,
+    By Israel Mafabi Emmanuel
+*/
+
+body {
+    background: black url(../images/sketch.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#wall {
+    background: url(../images/wall.jpg) no-repeat center;
+    border: 15px solid white;
+    border-bottom: 60px solid white;
+
+    margin: 40px auto;
+    box-shadow: 15px 15px 47px lime, -15px -15px 47px aqua;
+    -webkit-box-shadow: 15px 15px 47px lime, -15px -15px 47px aqua;
+    -moz-box-shadow: 15px 15px 47px lime, -15px -15px 47px aqua;
+
+    position: relative;
+
+    width: 980px;
+    height: 622px;
+}
+
+.tag-1, #tag-2, #tag-3, #tag-4, #tag-5, #tag-6, #tag-7 {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 980px;
+    height: 622px;
+}
+
+.tag-1 {
+    background: url(../images/tag-1.png) no-repeat;
+    display: block;
+
+    z-index: 7;
+}
+
+#wall #tag-2 {
+    background: url(../images/tag-2.png) no-repeat;
+    display: block;
+
+    z-index: 6;
+}
+
+div #wall #tag-3 .slick {
+    background: url(../images/tag-3.png) no-repeat;
+    display: block;
+
+    z-index: 4;
+}
+
+#wall #tag-4 {
+    background: url(../images/tag-4.png) no-repeat;
+    display: block;
+
+    z-index: 4;
+}
+
+div #wall .parent #tag-5 .slick {
+    background: url(../images/tag-5.png) no-repeat;
+    display: block;
+
+    z-index: 3;
+}
+
+div #wall div .parent div:last-child div #tag-6 {
+    background: url(../images/tag-6.png) no-repeat;
+    display: block;
+
+    z-index: 2;
+}
+
+body div #wall div .parent div > #tag-6 .slick {
+    background: url(../images/tag-7.png) no-repeat;
+    display: block;
+
+    z-index: 2;
+}
